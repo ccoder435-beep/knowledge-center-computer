@@ -1,0 +1,2682 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Centre Computer Education | Patna, Bihar | Leading IT & Computer Training Institute</title>
+  <meta name="description" content="Join Knowledge Centre Computer Education in Patna, Bihar. Learn ADCA, DCA, Tally Prime with GST, Web Development, Graphic Design & Advanced Excel with 100% practical lab training and certified diplomas.">
+  <meta name="keywords" content="Computer Institute Patna, Knowledge Centre Patna, ADCA course Patna, DCA Patna, Tally Prime GST Patna, Web Development Patna, Computer classes Bihar, Certificate Verification">
+  
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a56db'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='50' fill='white'>KC</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1a56db', // Exact Royal Blue primary requested
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#0f172a',
+            },
+            accent: {
+              teal: '#06b6d4',
+              amber: '#f59e0b',
+              emerald: '#10b981',
+              whatsapp: '#25D366',
+              whatsappDark: '#128C7E'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          boxShadow: {
+            'card': '0 10px 30px -5px rgba(26, 86, 219, 0.08)',
+            'card-hover': '0 20px 35px -5px rgba(26, 86, 219, 0.16)',
+            'glow': '0 0 25px rgba(26, 86, 219, 0.35)',
+            'cert': '0 15px 50px -10px rgba(15, 23, 42, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom animations and polish */
+    .page-view {
+      animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Print styling specifically for student certificate verification slip */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printable-cert-area, #printable-cert-area * {
+        visibility: visible;
+      }
+      #printable-cert-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        background: white !important;
+        box-shadow: none !important;
+        border: 2px solid #1a56db !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* Subtle grid pattern background */
+    .bg-grid-pattern {
+      background-image: radial-gradient(rgba(26, 86, 219, 0.08) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-[#f8fafc] antialiased flex flex-col min-h-screen selection:bg-brand-700 selection:text-white">
+
+  <!-- ==========================================
+       TOP ANNOUNCEMENT & CONTACT STRIP
+       ========================================== -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center flex-wrap justify-center gap-x-6 gap-y-1">
+        <span class="flex items-center gap-1.5 font-medium text-slate-200">
+          <i class="fa-solid fa-location-dot text-brand-400"></i>
+          Patna, Bihar (Near Central Hub)
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <a href="tel:+917870076269" class="flex items-center gap-1.5 hover:text-white transition">
+          <i class="fa-solid fa-phone text-accent-emerald"></i>
+          +91 78700 76269
+        </a>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-clock text-accent-amber"></i>
+          Mon-Sat: 6:30 AM–2:00 PM & 3:00 PM–9:00 PM
+        </span>
+      </div>
+      
+      <div class="flex items-center gap-3">
+        <span id="current-status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Patna Lab Open
+        </span>
+        <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20inquire%20about%20admissions." target="_blank" rel="noopener noreferrer" class="text-accent-emerald hover:text-white transition flex items-center gap-1 font-semibold">
+          <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MAIN NAVIGATION (STICKY HEADER)
+       ========================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="nav-link-trigger group flex items-center gap-3.5" data-page="home">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-800 to-brand-600 flex items-center justify-center text-white font-extrabold text-2xl shadow-md group-hover:scale-105 transition-transform">
+            <span class="tracking-tighter font-display">KC</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-xl sm:text-2xl font-black tracking-tight text-brand-700 leading-none group-hover:text-brand-800 transition">
+                KNOWLEDGE CENTRE
+              </span>
+            </div>
+            <span class="text-[10px] sm:text-xs font-bold tracking-widest text-slate-500 uppercase block mt-1">
+              Computer Education &bull; Patna, Bihar
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+          <a href="#home" data-page="home" class="nav-item px-3.5 py-2 rounded-lg text-sm font-semibold transition text-slate-700 hover:text-brand-700 hover:bg-brand-50">
+            <i class="fa-solid fa-house-chimney text-xs mr-1 opacity-70"></i> Home
+          </a>
+          <a href="#courses" data-page="courses" class="nav-item px-3.5 py-2 rounded-lg text-sm font-semibold transition text-slate-700 hover:text-brand-700 hover:bg-brand-50">
+            <i class="fa-solid fa-graduation-cap text-xs mr-1 opacity-70"></i> Courses
+          </a>
+          <a href="#verify" data-page="verify" class="nav-item px-3.5 py-2 rounded-lg text-sm font-semibold transition text-slate-700 hover:text-brand-700 hover:bg-brand-50 relative">
+            <i class="fa-solid fa-certificate text-xs mr-1 text-accent-amber"></i> Certificate Verification
+            <span class="absolute -top-1 right-1 text-[9px] font-extrabold bg-brand-100 text-brand-700 px-1.5 py-0.2 rounded-full border border-brand-200">Online</span>
+          </a>
+          <a href="#about" data-page="about" class="nav-item px-3.5 py-2 rounded-lg text-sm font-semibold transition text-slate-700 hover:text-brand-700 hover:bg-brand-50">
+            <i class="fa-solid fa-landmark text-xs mr-1 opacity-70"></i> About Us
+          </a>
+          <a href="#gallery" data-page="gallery" class="nav-item px-3.5 py-2 rounded-lg text-sm font-semibold transition text-slate-700 hover:text-brand-700 hover:bg-brand-50">
+            <i class="fa-solid fa-images text-xs mr-1 opacity-70"></i> Gallery
+          </a>
+          <a href="#contact" data-page="contact" class="nav-item px-3.5 py-2 rounded-lg text-sm font-semibold transition text-slate-700 hover:text-brand-700 hover:bg-brand-50">
+            <i class="fa-solid fa-envelope-open-text text-xs mr-1 opacity-70"></i> Contact
+          </a>
+        </nav>
+
+        <!-- Header CTA Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20apply%20for%20admission." target="_blank" rel="noopener noreferrer" class="hidden xl:inline-flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-brand-700 px-3 py-2 border border-slate-300 rounded-lg transition hover:bg-slate-50">
+            <i class="fa-solid fa-phone text-brand-700"></i> +91 78700 76269
+          </a>
+          <a href="#contact" data-page="contact" class="nav-link-trigger inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-bold text-white bg-brand-700 hover:bg-brand-800 shadow-md shadow-brand-700/20 active:scale-95 transition-all">
+            <i class="fa-solid fa-paper-plane text-xs"></i> Admission Inquiry
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="flex items-center lg:hidden">
+          <button id="mobile-menu-btn" type="button" class="p-2.5 rounded-lg text-slate-600 hover:text-brand-700 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation Menu">
+            <i id="hamburger-icon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Down Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white shadow-xl px-4 pt-3 pb-6 space-y-1">
+      <a href="#home" data-page="home" class="mobile-nav-item flex items-center justify-between px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-house-chimney text-brand-700 w-5"></i> Home</span>
+        <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+      </a>
+      <a href="#courses" data-page="courses" class="mobile-nav-item flex items-center justify-between px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-graduation-cap text-brand-700 w-5"></i> Courses & Diplomas</span>
+        <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+      </a>
+      <a href="#verify" data-page="verify" class="mobile-nav-item flex items-center justify-between px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-certificate text-accent-amber w-5"></i> Certificate Verification</span>
+        <span class="text-[10px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">Instant</span>
+      </a>
+      <a href="#about" data-page="about" class="mobile-nav-item flex items-center justify-between px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-landmark text-brand-700 w-5"></i> About Institute</span>
+        <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+      </a>
+      <a href="#gallery" data-page="gallery" class="mobile-nav-item flex items-center justify-between px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-images text-brand-700 w-5"></i> Computer Lab & Gallery</span>
+        <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+      </a>
+      <a href="#contact" data-page="contact" class="mobile-nav-item flex items-center justify-between px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-envelope-open-text text-brand-700 w-5"></i> Contact & Admissions</span>
+        <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+      </a>
+      
+      <div class="pt-4 mt-2 border-t border-slate-100 space-y-2.5">
+        <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20know%20more%20about%20computer%20courses." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-white bg-accent-whatsapp hover:bg-emerald-600 shadow-sm transition">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Inquiry
+        </a>
+        <a href="tel:+917870076269" class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition text-sm">
+          <i class="fa-solid fa-phone text-brand-700"></i> Call +91 78700 76269
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       PAGE VIEWS CONTAINER (SPA ROUTER)
+       ========================================== -->
+  <main id="main-content" class="flex-grow">
+
+    <!-- ==========================================
+         VIEW 1: HOME PAGE
+         ========================================== -->
+    <div id="view-home" class="page-view">
+      
+      <!-- HERO BANNER SECTION -->
+      <section class="relative bg-gradient-to-b from-blue-50/70 via-white to-slate-50 pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden border-b border-slate-200/60 bg-grid-pattern">
+        <!-- Decorative Glow Orbs -->
+        <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-brand-200/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-cyan-200/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 text-center lg:text-left">
+              
+              <!-- Location & Quality Pill -->
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+                <span class="flex h-2 w-2 rounded-full bg-brand-600 animate-ping"></span>
+                <span>Patna's Premier Computer Education Hub &bull; ISO Aligned</span>
+              </div>
+
+              <!-- Main Bold Headline -->
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6">
+                Empower Your Career with <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 via-brand-600 to-cyan-600">Advanced Computer Education</span> in Patna
+              </h1>
+
+              <!-- Subheadline -->
+              <p class="text-base sm:text-lg lg:text-xl text-slate-600 font-normal leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                Master industry-demand diplomas, accounting software, coding, and creative digital design at <strong>Knowledge Centre Computer Education</strong>. Gain 100% practical lab training with verified credentials for private and government careers.
+              </p>
+
+              <!-- Two CTAs -->
+              <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                <a href="#courses" data-page="courses" class="nav-link-trigger w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-xl text-base font-bold text-white bg-brand-700 hover:bg-brand-800 shadow-lg shadow-brand-700/25 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  Explore Courses
+                </a>
+                <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20know%20more%20about%20your%20computer%20courses." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-xl text-base font-bold text-white bg-accent-whatsapp hover:bg-emerald-600 shadow-lg shadow-emerald-500/20 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
+                  <i class="fa-brands fa-whatsapp text-xl"></i>
+                  Contact Us on WhatsApp
+                </a>
+              </div>
+
+              <!-- Trust Stats Row -->
+              <div class="pt-6 border-t border-slate-200/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left">
+                <div>
+                  <div class="text-2xl lg:text-3xl font-extrabold text-brand-700 font-display">5,000+</div>
+                  <div class="text-xs font-semibold text-slate-500 mt-0.5">Students Trained</div>
+                </div>
+                <div>
+                  <div class="text-2xl lg:text-3xl font-extrabold text-slate-900 font-display">10+ Yrs</div>
+                  <div class="text-xs font-semibold text-slate-500 mt-0.5">Education Trust</div>
+                </div>
+                <div>
+                  <div class="text-2xl lg:text-3xl font-extrabold text-brand-700 font-display">1:1 PC</div>
+                  <div class="text-xs font-semibold text-slate-500 mt-0.5">Individual Lab Ratio</div>
+                </div>
+                <div>
+                  <div class="text-2xl lg:text-3xl font-extrabold text-accent-emerald font-display">100%</div>
+                  <div class="text-xs font-semibold text-slate-500 mt-0.5">Job-Ready Skills</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Hero Visual Showcase -->
+            <div class="lg:col-span-5 relative">
+              <div class="relative mx-auto max-w-md lg:max-w-none">
+                
+                <!-- Main High-Res Image (Unsplash Real Lab/Classroom) -->
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                  <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80" alt="Students in modern computer lab at Knowledge Centre Patna" class="w-full h-[380px] sm:h-[420px] object-cover hover:scale-105 transition-transform duration-700">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                  
+                  <!-- Bottom Overlay Caption -->
+                  <div class="absolute bottom-4 left-4 right-4 text-white">
+                    <span class="inline-block px-2.5 py-0.5 bg-brand-700 text-[10px] font-extrabold tracking-wider rounded uppercase mb-1">Modern Patna Campus</span>
+                    <p class="text-sm font-semibold drop-shadow-sm">Hi-Tech Lab with High-Speed Internet & Professional Mentor Support</p>
+                  </div>
+                </div>
+
+                <!-- Floating Badge 1: Verification Ready -->
+                <div class="absolute -top-4 -left-4 sm:-left-6 bg-white p-3.5 rounded-xl shadow-card border border-slate-100 flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center text-accent-amber font-bold text-lg">
+                    <i class="fa-solid fa-shield-check"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-extrabold text-slate-900">QR Code Verified</div>
+                    <div class="text-[11px] text-slate-500">Government & MNC Recognized</div>
+                  </div>
+                </div>
+
+                <!-- Floating Badge 2: Practical Ratio -->
+                <div class="absolute -bottom-5 -right-4 sm:-right-6 bg-white p-4 rounded-xl shadow-card border border-slate-100 flex items-center gap-3.5">
+                  <div class="w-11 h-11 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-brand-700 font-bold text-lg">
+                    <i class="fa-solid fa-laptop-code"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-extrabold text-slate-900">80% Lab Practicals</div>
+                    <div class="text-[11px] text-emerald-600 font-semibold">Individual PC for Every Student</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           QUICK HIGHLIGHTS BAR (EXACT SPECIFICATION)
+           ========================================== -->
+      <section class="bg-white py-10 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Highlight 1: Certified Courses -->
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-300 hover:bg-brand-50/40 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-brand-700 group-hover:text-white transition-all">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition">Certified Courses</h3>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  ISO-aligned diploma & certification programs with instant online certificate verification.
+                </p>
+              </div>
+            </div>
+
+            <!-- Highlight 2: Expert Trainers -->
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-300 hover:bg-brand-50/40 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition">Expert Trainers</h3>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  Learn from senior IT educators and certified industry specialists with 10+ years teaching experience.
+                </p>
+              </div>
+            </div>
+
+            <!-- Highlight 3: Practical Lab Training -->
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-300 hover:bg-brand-50/40 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900 group-hover:text-cyan-700 transition">Practical Lab Training</h3>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  Dedicated computer workstation per student, AC labs, high-speed Wi-Fi & daily assignments.
+                </p>
+              </div>
+            </div>
+
+            <!-- Highlight 4: 100% Job-Oriented Training -->
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-300 hover:bg-brand-50/40 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition">100% Job-Oriented Training</h3>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  Resume workshops, live corporate accounting projects, interview drills & mock tests in Patna.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           FEATURED COURSES PREVIEW ON HOME
+           ========================================== -->
+      <section class="py-16 bg-[#f8fafc]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+              <span class="text-xs font-extrabold uppercase tracking-widest text-brand-700">Flagship Programs</span>
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-1">
+                Most In-Demand Computer Courses in Patna
+              </h2>
+              <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+                Choose from comprehensive 1-year diplomas, accounting specializations, and programming tracks built for modern jobs.
+              </p>
+            </div>
+            <div class="mt-4 md:mt-0">
+              <a href="#courses" data-page="courses" class="nav-link-trigger inline-flex items-center gap-2 text-sm font-bold text-brand-700 hover:text-brand-800 bg-brand-50 hover:bg-brand-100 px-4 py-2.5 rounded-xl border border-brand-200 transition">
+                View All Courses <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Grid of Top 3 Featured Courses -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1: ADCA -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col group">
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="ADCA Course at Knowledge Centre Patna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-brand-700 text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">
+                  Most Popular &bull; 12 Months
+                </span>
+                <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-slate-800 text-xs font-bold px-2 py-0.5 rounded shadow">
+                  Beginner to Pro
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-700 transition">
+                  ADCA (Advance Diploma in Computer Application)
+                </h3>
+                <p class="text-xs text-slate-600 mt-2 line-clamp-2">
+                  Complete master diploma covering Fundamentals, MS Office, Tally Prime with GST, Graphic Design, HTML Web Basics & Hardware.
+                </p>
+                <div class="my-4 pt-3 border-t border-slate-100 grid grid-cols-2 gap-2 text-xs text-slate-600">
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-600"></i> MS Office Suite</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-600"></i> Tally Prime + GST</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-600"></i> Photoshop/Corel</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-600"></i> Govt. Recognized</span>
+                </div>
+                <div class="mt-auto pt-4 flex items-center justify-between gap-3">
+                  <a href="#courses" data-page="courses" class="nav-link-trigger text-xs font-bold text-slate-600 hover:text-brand-700 underline">
+                    Course Syllabus
+                  </a>
+                  <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20inquire%20about%20the%20ADCA%20course%20fees%20and%20admission." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-50 hover:bg-accent-whatsapp text-emerald-700 hover:text-white font-bold text-xs border border-emerald-200 transition">
+                    <i class="fa-brands fa-whatsapp"></i> Inquire Fee
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Tally Prime with GST -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col group">
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Tally Prime with GST Training in Patna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-accent-amber text-slate-900 text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">
+                  High Demand &bull; 3-4 Months
+                </span>
+                <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-slate-800 text-xs font-bold px-2 py-0.5 rounded shadow">
+                  Accounting Track
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-700 transition">
+                  Tally Prime with GST & Accounting
+                </h3>
+                <p class="text-xs text-slate-600 mt-2 line-clamp-2">
+                  Learn complete practical corporate accounting, ledger creation, GST tax calculation, billing, E-way bill, TDS and balance sheets.
+                </p>
+                <div class="my-4 pt-3 border-t border-slate-100 grid grid-cols-2 gap-2 text-xs text-slate-600">
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-accent-amber"></i> Voucher & Inventory</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-accent-amber"></i> GSTR-1 & GSTR-3B</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-accent-amber"></i> TDS & Payroll</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-accent-amber"></i> Bank Reconciliation</span>
+                </div>
+                <div class="mt-auto pt-4 flex items-center justify-between gap-3">
+                  <a href="#courses" data-page="courses" class="nav-link-trigger text-xs font-bold text-slate-600 hover:text-brand-700 underline">
+                    Course Syllabus
+                  </a>
+                  <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20inquire%20about%20the%20Tally%20Prime%20with%20GST%20course%20fees." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-50 hover:bg-accent-whatsapp text-emerald-700 hover:text-white font-bold text-xs border border-emerald-200 transition">
+                    <i class="fa-brands fa-whatsapp"></i> Inquire Fee
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Web Development & Programming -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col group">
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Web Development and Coding Course in Patna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-cyan-700 text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">
+                  Tech Career &bull; 6 Months
+                </span>
+                <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-slate-800 text-xs font-bold px-2 py-0.5 rounded shadow">
+                  IT & Coding
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-700 transition">
+                  Web Development & Programming
+                </h3>
+                <p class="text-xs text-slate-600 mt-2 line-clamp-2">
+                  C Language fundamentals, Python scripting, HTML5, CSS3 responsive UI, and JavaScript project building.
+                </p>
+                <div class="my-4 pt-3 border-t border-slate-100 grid grid-cols-2 gap-2 text-xs text-slate-600">
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-cyan-600"></i> C Programming</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-cyan-600"></i> Python Core</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-cyan-600"></i> HTML5/CSS3/JS</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-cyan-600"></i> Live Project Host</span>
+                </div>
+                <div class="mt-auto pt-4 flex items-center justify-between gap-3">
+                  <a href="#courses" data-page="courses" class="nav-link-trigger text-xs font-bold text-slate-600 hover:text-brand-700 underline">
+                    Course Syllabus
+                  </a>
+                  <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20inquire%20about%20the%20Web%20Development%20&%20Programming%20course%20fees." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-50 hover:bg-accent-whatsapp text-emerald-700 hover:text-white font-bold text-xs border border-emerald-200 transition">
+                    <i class="fa-brands fa-whatsapp"></i> Inquire Fee
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================
+           QUICK VERIFICATION CALLOUT (INTERACTIVE)
+           ========================================== -->
+      <section class="py-12 bg-white border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="bg-gradient-to-r from-brand-900 to-brand-700 rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="max-w-xl text-center md:text-left">
+              <span class="inline-block px-3 py-1 bg-white/20 text-white text-xs font-bold rounded-full mb-3 backdrop-blur">
+                <i class="fa-solid fa-badge-check text-accent-amber mr-1"></i> Student Portal
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+                Verify Your Certificate Online
+              </h3>
+              <p class="text-blue-100 text-sm mt-2">
+                Employers and students can instantly verify credentials issued by Knowledge Centre Computer Education Patna using their Roll Number.
+              </p>
+            </div>
+            <div class="w-full md:w-auto shrink-0 flex flex-col sm:flex-row gap-3">
+              <a href="#verify" data-page="verify" class="nav-link-trigger px-6 py-3.5 bg-white text-brand-800 hover:bg-blue-50 font-bold rounded-xl shadow text-center transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-magnifying-glass"></i> Open Verification Portal
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           WHY CHOOSE KNOWLEDGE CENTRE PATNA
+           ========================================== -->
+      <section class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-700">The Knowledge Centre Advantage</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Why Patna Students Choose Us Over Others</h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-3">
+              We focus on building actual hands-on computer proficiency, not just theory. Every student gets dedicated practice time and personal faculty guidance.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-700 flex items-center justify-center text-xl mb-5">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <h4 class="text-lg font-bold text-slate-900">Flexible Double Shift Batches</h4>
+              <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                Choose between morning (6:30 AM – 2:00 PM) or evening (3:00 PM – 9:00 PM) batches. Ideal for college students, school students, and working professionals.
+              </p>
+            </div>
+
+            <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-5">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+              </div>
+              <h4 class="text-lg font-bold text-slate-900">Affordable Fee with Installments</h4>
+              <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                Quality education shouldn't be expensive. We offer the most reasonable fee structure in Patna with easy monthly installment options.
+              </p>
+            </div>
+
+            <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-5">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <h4 class="text-lg font-bold text-slate-900">100% Uninterrupted Power Lab</h4>
+              <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                Equipped with industrial UPS and silent generator backup so your practical lab hours never stop due to power cuts in Patna.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           REAL STUDENT TESTIMONIALS
+           ========================================== -->
+      <section class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-700">Success Stories</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">What Our Students Say</h2>
+            <p class="text-slate-600 text-sm mt-2">Hear directly from alumni working in leading private companies and government offices in Bihar and across India.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <div class="flex text-amber-400 gap-1 text-sm mb-3">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-700 text-sm italic leading-relaxed">
+                  "I completed the 1-year ADCA course from Knowledge Centre Patna. The practical lab training is phenomenal. The faculty explained Tally Prime and Excel with real invoices. Got placed as an accounts executive right after completing!"
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-200/70 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-700 text-white flex items-center justify-center font-bold text-sm">
+                  AK
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold text-slate-900">Amit Kumar</h5>
+                  <span class="text-xs text-slate-500">ADCA Batch &bull; Accounts Executive, Patna</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <div class="flex text-amber-400 gap-1 text-sm mb-3">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-700 text-sm italic leading-relaxed">
+                  "Flexible morning batch timing (6:30 AM) was a lifesaver for me because of my college schedule. The online certificate verification also made it very smooth during government document verification!"
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-200/70 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-sm">
+                  PS
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold text-slate-900">Pooja Sharma</h5>
+                  <span class="text-xs text-slate-500">DCA Batch &bull; BPSC Aspirant</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <div class="flex text-amber-400 gap-1 text-sm mb-3">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-700 text-sm italic leading-relaxed">
+                  "Knowledge Centre is the best place in Patna for Web Development & Graphic Design. I learned Photoshop, C language, and frontend coding. The mentors are patient and always available in the lab."
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-200/70 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-cyan-600 text-white flex items-center justify-center font-bold text-sm">
+                  RR
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold text-slate-900">Rahul Ranjan</h5>
+                  <span class="text-xs text-slate-500">Web Dev Batch &bull; Freelance Designer</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER BEFORE FOOTER -->
+      <section class="py-14 bg-brand-700 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+          <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">Ready to Advance Your Career in Patna?</h2>
+          <p class="mt-3 text-blue-100 text-base max-w-xl mx-auto">
+            New batches commence every Monday. Limited computers per batch to guarantee personal mentorship.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20reserve%20a%20seat%20for%20the%20upcoming%20computer%20batch." target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 bg-accent-whatsapp hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg transition flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i> Reserve Seat on WhatsApp
+            </a>
+            <a href="#contact" data-page="contact" class="nav-link-trigger px-7 py-3.5 bg-white text-brand-800 hover:bg-blue-50 font-bold rounded-xl shadow-lg transition flex items-center gap-2">
+              <i class="fa-solid fa-calendar-check"></i> Book Free Demo Class
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- END VIEW 1: HOME -->
+
+
+    <!-- ==========================================
+         VIEW 2: COURSES PAGE (MULTI-COURSE GRID)
+         ========================================== -->
+    <div id="view-courses" class="page-view hidden">
+      
+      <!-- Courses Hero Header -->
+      <div class="bg-gradient-to-b from-brand-900 via-brand-800 to-brand-700 text-white py-14 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div class="relative max-w-4xl mx-auto">
+          <span class="inline-block px-3 py-1 bg-white/10 text-blue-200 text-xs font-bold rounded-full mb-3 uppercase tracking-wider backdrop-blur">
+            Job & Diploma Programs &bull; Patna Branch
+          </span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            Industry-Oriented Computer Courses
+          </h1>
+          <p class="text-blue-100 text-base sm:text-lg mt-3 max-w-2xl mx-auto">
+            Practical syllabus updated for 2026. Every course includes hands-on lab sessions, study material, real-world case studies, and recognized certification.
+          </p>
+          <div class="mt-6 flex flex-wrap justify-center items-center gap-4 text-xs font-medium text-blue-100">
+            <span><i class="fa-solid fa-check text-accent-emerald mr-1"></i> ISO 9001:2015 Standard</span>
+            <span><i class="fa-solid fa-check text-accent-emerald mr-1"></i> Instant QR Verification</span>
+            <span><i class="fa-solid fa-check text-accent-emerald mr-1"></i> 1:1 Lab Computer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Filter Pills -->
+      <div class="bg-white border-b border-slate-200 sticky top-20 z-30 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-start sm:justify-center gap-2 overflow-x-auto no-scrollbar">
+          <button class="course-filter-btn px-4 py-1.5 rounded-full text-xs font-bold bg-brand-700 text-white transition whitespace-nowrap" data-filter="all">All Courses (6)</button>
+          <button class="course-filter-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition whitespace-nowrap" data-filter="diploma">Diplomas (ADCA/DCA)</button>
+          <button class="course-filter-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition whitespace-nowrap" data-filter="accounting">Accounting & GST</button>
+          <button class="course-filter-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition whitespace-nowrap" data-filter="programming">Programming & Web</button>
+          <button class="course-filter-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition whitespace-nowrap" data-filter="creative">Design & Editing</button>
+        </div>
+      </div>
+
+      <!-- Main Course Grid -->
+      <section class="py-12 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="course-cards-container">
+            
+            <!-- COURSE 1: ADCA -->
+            <div class="course-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col" data-category="diploma">
+              <div class="relative h-52 overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="ADCA Course" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 bg-brand-700 text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">
+                  12 Months Diploma
+                </span>
+                <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1.5">
+                  <i class="fa-solid fa-clock"></i> 1 Year &bull; Daily 1-2 Hrs Lab
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[11px] font-bold text-brand-700 bg-brand-50 px-2.5 py-0.5 rounded-full border border-brand-200">
+                    Comprehensive Master Diploma
+                  </span>
+                  <span class="text-xs text-amber-500 font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-star"></i> 4.9 (420+ reviews)
+                  </span>
+                </div>
+                <h3 class="text-xl font-extrabold text-slate-900 leading-snug">
+                  ADCA (Advance Diploma in Computer Application)
+                </h3>
+                <p class="text-xs text-slate-600 mt-2">
+                  The most respected 1-year computer qualification in Bihar for government recruitment, banks, and private administrative positions.
+                </p>
+
+                <!-- Course Features Checklist -->
+                <div class="my-5 space-y-2 text-xs text-slate-700 border-y border-slate-100 py-4">
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-600 mt-0.5"></i>
+                    <span><strong>Module 1:</strong> Computer Fundamentals, Windows 11 & Typing Master</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-600 mt-0.5"></i>
+                    <span><strong>Module 2:</strong> MS Office 365 (Word, Advanced Excel, PowerPoint, Access)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-600 mt-0.5"></i>
+                    <span><strong>Module 3:</strong> Financial Accounting with Tally Prime & GST Billing</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-600 mt-0.5"></i>
+                    <span><strong>Module 4:</strong> Graphic Design (Photoshop & CorelDRAW basics)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-600 mt-0.5"></i>
+                    <span><strong>Module 5:</strong> HTML Web Basics, Cybersecurity & Troubleshooting</span>
+                  </div>
+                </div>
+
+                <div class="mt-auto space-y-3">
+                  <!-- REQUIRED: WhatsApp Inquiry Button with prefilled message -->
+                  <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20am%20interested%20in%20the%20ADCA%20(Advance%20Diploma%20in%20Computer%20Application)%20course.%20Please%20share%20the%20fee%20structure,%20syllabus,%20and%20next%20batch%20timings." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-white bg-accent-whatsapp hover:bg-emerald-600 shadow-md shadow-emerald-500/15 active:scale-95 transition text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Inquire Fee on WhatsApp
+                  </a>
+                  <button onclick="openSyllabusModal('ADCA')" class="w-full py-2 px-3 text-xs font-bold text-brand-700 bg-brand-50 hover:bg-brand-100 rounded-lg transition text-center">
+                    <i class="fa-solid fa-file-lines mr-1"></i> View Detailed Syllabus
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 2: DCA -->
+            <div class="course-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col" data-category="diploma">
+              <div class="relative h-52 overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=80" alt="DCA Course" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 bg-blue-600 text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">
+                  6 Months Diploma
+                </span>
+                <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1.5">
+                  <i class="fa-solid fa-clock"></i> 6 Months &bull; Fast-Track Available
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
+                    Essential Office Diploma
+                  </span>
+                  <span class="text-xs text-amber-500 font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-star"></i> 4.8 (310+ reviews)
+                  </span>
+                </div>
+                <h3 class="text-xl font-extrabold text-slate-900 leading-snug">
+                  DCA (Diploma in Computer Application)
+                </h3>
+                <p class="text-xs text-slate-600 mt-2">
+                  The ideal foundational qualification for 10th and 12th pass students aiming for corporate desk jobs, clerk roles, and competitive exams.
+                </p>
+
+                <!-- Course Features Checklist -->
+                <div class="my-5 space-y-2 text-xs text-slate-700 border-y border-slate-100 py-4">
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-blue-600 mt-0.5"></i>
+                    <span><strong>Computer Architecture:</strong> Hardware, OS, Files & Storage</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-blue-600 mt-0.5"></i>
+                    <span><strong>Microsoft Word:</strong> Documentation, Letters, Formatting & Tables</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-blue-600 mt-0.5"></i>
+                    <span><strong>Microsoft Excel:</strong> Formulas (SUM, IF, VLOOKUP), Charts, Data Entry</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-blue-600 mt-0.5"></i>
+                    <span><strong>PowerPoint:</strong> Animated Presentations, Business Slides</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-blue-600 mt-0.5"></i>
+                    <span><strong>Internet & Typing:</strong> Hindi (KrutiDev/Mangal) + English Typing</span>
+                  </div>
+                </div>
+
+                <div class="mt-auto space-y-3">
+                  <!-- REQUIRED: WhatsApp Inquiry Button with prefilled message -->
+                  <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20am%20interested%20in%20the%20DCA%20(Diploma%20in%20Computer%20Application)%20course.%20Please%20share%20the%20fee%20structure%20and%20batch%20timings." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-white bg-accent-whatsapp hover:bg-emerald-600 shadow-md shadow-emerald-500/15 active:scale-95 transition text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Inquire Fee on WhatsApp
+                  </a>
+                  <button onclick="openSyllabusModal('DCA')" class="w-full py-2 px-3 text-xs font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-lg transition text-center">
+                    <i class="fa-solid fa-file-lines mr-1"></i> View Detailed Syllabus
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 3: TALLY PRIME WITH GST -->
+            <div class="course-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col" data-category="accounting">
+              <div class="relative h-52 overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Tally Prime with GST" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 bg-accent-amber text-slate-950 text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">
+                  3 - 4 Months
+                </span>
+                <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1.5">
+                  <i class="fa-solid fa-clock"></i> 100% Practical Accounting
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[11px] font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
+                    Professional Accountant
+                  </span>
+                  <span class="text-xs text-amber-500 font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-star"></i> 4.9 (280+ reviews)
+                  </span>
+                </div>
+                <h3 class="text-xl font-extrabold text-slate-900 leading-snug">
+                  Tally Prime with GST & Accounting
+                </h3>
+                <p class="text-xs text-slate-600 mt-2">
+                  Complete computerized accounting training. Ideal for commerce students, store managers, business owners, and accounting job seekers.
+                </p>
+
+                <!-- Course Features Checklist -->
+                <div class="my-5 space-y-2 text-xs text-slate-700 border-y border-slate-100 py-4">
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-amber-600 mt-0.5"></i>
+                    <span><strong>Accounting Principles:</strong> Golden Rules, Ledgers, Voucher Entries</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-amber-600 mt-0.5"></i>
+                    <span><strong>Inventory & Stock:</strong> Units, Godowns, Batch Numbers, Invoicing</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-amber-600 mt-0.5"></i>
+                    <span><strong>GST Taxation:</strong> CGST, SGST, IGST, E-Way Bill, GSTR-1, GSTR-3B</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-amber-600 mt-0.5"></i>
+                    <span><strong>Payroll Management:</strong> Employee Salary Slips, PF, ESI, Gratuity</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-amber-600 mt-0.5"></i>
+                    <span><strong>Financial Reports:</strong> Balance Sheet, P&L, Bank Reconciliation</span>
+                  </div>
+                </div>
+
+                <div class="mt-auto space-y-3">
+                  <!-- REQUIRED: WhatsApp Inquiry Button with prefilled message -->
+                  <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20am%20interested%20in%20the%20Tally%20Prime%20with%20GST%20&%20Accounting%20course.%20Please%20share%20fee%20details%20and%20batch%20slots." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-white bg-accent-whatsapp hover:bg-emerald-600 shadow-md shadow-emerald-500/15 active:scale-95 transition text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Inquire Fee on WhatsApp
+                  </a>
+                  <button onclick="openSyllabusModal('Tally')" class="w-full py-2 px-3 text-xs font-bold text-amber-800 bg-amber-50 hover:bg-amber-100 rounded-lg transition text-center">
+                    <i class="fa-solid fa-file-lines mr-1"></i> View Detailed Syllabus
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 4: WEB DEVELOPMENT & PROGRAMMING -->
+            <div class="course-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col" data-category="programming">
+              <div class="relative h-52 overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Web Development and Programming" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 bg-cyan-600 text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">
+                  6 Months IT Track
+                </span>
+                <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1.5">
+                  <i class="fa-solid fa-clock"></i> Project-Based Learning
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[11px] font-bold text-cyan-700 bg-cyan-50 px-2.5 py-0.5 rounded-full border border-cyan-200">
+                    Coding & Software Career
+                  </span>
+                  <span class="text-xs text-amber-500 font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-star"></i> 4.9 (190+ reviews)
+                  </span>
+                </div>
+                <h3 class="text-xl font-extrabold text-slate-900 leading-snug">
+                  Web Development & Programming (C, Python, HTML/CSS)
+                </h3>
+                <p class="text-xs text-slate-600 mt-2">
+                  Master core programming logic in C, automate with Python, and build dynamic responsive websites with HTML5, CSS3, and JavaScript.
+                </p>
+
+                <!-- Course Features Checklist -->
+                <div class="my-5 space-y-2 text-xs text-slate-700 border-y border-slate-100 py-4">
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-cyan-600 mt-0.5"></i>
+                    <span><strong>C Programming:</strong> Variables, Loops, Arrays, Pointers, Structures</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-cyan-600 mt-0.5"></i>
+                    <span><strong>Python Language:</strong> OOP, Functions, File I/O, Automation Scripts</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-cyan-600 mt-0.5"></i>
+                    <span><strong>HTML5 & CSS3:</strong> Modern Semantics, Flexbox, CSS Grid & Media Queries</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-cyan-600 mt-0.5"></i>
+                    <span><strong>JavaScript:</strong> DOM Manipulation, Interactive UI, API integration</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-cyan-600 mt-0.5"></i>
+                    <span><strong>Project & Git:</strong> Live website deployment on GitHub Pages</span>
+                  </div>
+                </div>
+
+                <div class="mt-auto space-y-3">
+                  <!-- REQUIRED: WhatsApp Inquiry Button with prefilled message -->
+                  <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20am%20interested%20in%20the%20Web%20Development%20&%20Programming%20(C,%20Python,%20HTML/CSS)%20course.%20Please%20share%20fee%20details%20and%20curriculum." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-white bg-accent-whatsapp hover:bg-emerald-600 shadow-md shadow-emerald-500/15 active:scale-95 transition text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Inquire Fee on WhatsApp
+                  </a>
+                  <button onclick="openSyllabusModal('WebDev')" class="w-full py-2 px-3 text-xs font-bold text-cyan-700 bg-cyan-50 hover:bg-cyan-100 rounded-lg transition text-center">
+                    <i class="fa-solid fa-file-lines mr-1"></i> View Detailed Syllabus
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 5: GRAPHIC DESIGN & VIDEO EDITING -->
+            <div class="course-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col" data-category="creative">
+              <div class="relative h-52 overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Graphic Design and Video Editing" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 bg-purple-600 text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">
+                  4 - 6 Months
+                </span>
+                <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1.5">
+                  <i class="fa-solid fa-clock"></i> Creative Portfolio Track
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[11px] font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200">
+                    High Freelance Demand
+                  </span>
+                  <span class="text-xs text-amber-500 font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-star"></i> 4.9 (240+ reviews)
+                  </span>
+                </div>
+                <h3 class="text-xl font-extrabold text-slate-900 leading-snug">
+                  Graphic Design & Video Editing
+                </h3>
+                <p class="text-xs text-slate-600 mt-2">
+                  Become a skilled visual creator. Design promotional banners, flex printing, social media creatives, YouTube thumbnails, and edit HD videos.
+                </p>
+
+                <!-- Course Features Checklist -->
+                <div class="my-5 space-y-2 text-xs text-slate-700 border-y border-slate-100 py-4">
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-purple-600 mt-0.5"></i>
+                    <span><strong>Adobe Photoshop:</strong> Photo Retouching, Masking, Posters, Thumbnails</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-purple-600 mt-0.5"></i>
+                    <span><strong>CorelDRAW:</strong> Vector Flex, Banners, Visiting Cards, Packaging</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-purple-600 mt-0.5"></i>
+                    <span><strong>Adobe Illustrator:</strong> Logos, Vector Icons, Typography Art</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-purple-600 mt-0.5"></i>
+                    <span><strong>Video Editing:</strong> Premiere Pro Cuts, Transitions, Audio Sync, Reels</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-purple-600 mt-0.5"></i>
+                    <span><strong>Commercial Prep:</strong> Print vs Web Color Modes (CMYK/RGB), Exports</span>
+                  </div>
+                </div>
+
+                <div class="mt-auto space-y-3">
+                  <!-- REQUIRED: WhatsApp Inquiry Button with prefilled message -->
+                  <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20am%20interested%20in%20the%20Graphic%20Design%20&%20Video%20Editing%20course.%20Please%20share%20fee%20details%20and%20software%20list." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-white bg-accent-whatsapp hover:bg-emerald-600 shadow-md shadow-emerald-500/15 active:scale-95 transition text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Inquire Fee on WhatsApp
+                  </a>
+                  <button onclick="openSyllabusModal('Design')" class="w-full py-2 px-3 text-xs font-bold text-purple-700 bg-purple-50 hover:bg-purple-100 rounded-lg transition text-center">
+                    <i class="fa-solid fa-file-lines mr-1"></i> View Detailed Syllabus
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 6: ADVANCED EXCEL & MIS -->
+            <div class="course-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col" data-category="accounting">
+              <div class="relative h-52 overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Advanced Excel and MIS" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">
+                  2 Months Fast-Track
+                </span>
+                <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1.5">
+                  <i class="fa-solid fa-clock"></i> Corporate MIS Skill
+                </span>
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    Corporate Data Management
+                  </span>
+                  <span class="text-xs text-amber-500 font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-star"></i> 4.9 (170+ reviews)
+                  </span>
+                </div>
+                <h3 class="text-xl font-extrabold text-slate-900 leading-snug">
+                  Advanced Excel with MIS & Data Analysis
+                </h3>
+                <p class="text-xs text-slate-600 mt-2">
+                  Designed for corporate executive, back-office, and MIS reporting jobs. Transform raw sheets into automated decision dashboards.
+                </p>
+
+                <!-- Course Features Checklist -->
+                <div class="my-5 space-y-2 text-xs text-slate-700 border-y border-slate-100 py-4">
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                    <span><strong>Advanced Formulas:</strong> XLOOKUP, VLOOKUP, INDEX-MATCH, Nested IFs</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                    <span><strong>Data Summaries:</strong> Pivot Tables, Slicers, Power Pivot, Data Validation</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                    <span><strong>MIS Dashboards:</strong> Dynamic charts, sparklines, conditional formatting</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                    <span><strong>Automation:</strong> Intro to Excel Macros & Power Query data cleaning</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                    <span><strong>Real Case Studies:</strong> Retail sales reports, attendance & salary MIS</span>
+                  </div>
+                </div>
+
+                <div class="mt-auto space-y-3">
+                  <!-- REQUIRED: WhatsApp Inquiry Button with prefilled message -->
+                  <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20am%20interested%20in%20the%20Advanced%20Excel%20with%20MIS%20course.%20Please%20share%20fee%20structure%20and%20batch%20timings." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-white bg-accent-whatsapp hover:bg-emerald-600 shadow-md shadow-emerald-500/15 active:scale-95 transition text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Inquire Fee on WhatsApp
+                  </a>
+                  <button onclick="openSyllabusModal('Excel')" class="w-full py-2 px-3 text-xs font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 rounded-lg transition text-center">
+                    <i class="fa-solid fa-file-lines mr-1"></i> View Detailed Syllabus
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Course Comparison Table Section -->
+      <section class="py-14 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <h3 class="text-2xl font-extrabold text-slate-900">Compare Which Diploma Fits Your Career Goal</h3>
+            <p class="text-sm text-slate-600 mt-2">Not sure which course is right for you? Our counselors in Patna will guide you according to your qualification.</p>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-sm">
+              <thead>
+                <tr class="bg-slate-100 border-b border-slate-200 text-slate-800">
+                  <th class="p-4 font-bold">Course Title</th>
+                  <th class="p-4 font-bold">Ideal Duration</th>
+                  <th class="p-4 font-bold">Eligibility</th>
+                  <th class="p-4 font-bold">Career Opportunities</th>
+                  <th class="p-4 font-bold text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                <tr class="hover:bg-slate-50">
+                  <td class="p-4 font-bold text-brand-700">ADCA (Advance Diploma)</td>
+                  <td class="p-4 text-slate-600">12 Months</td>
+                  <td class="p-4 text-slate-600">10th / 12th / Any Stream</td>
+                  <td class="p-4 text-slate-600">Computer Operator, Office In-Charge, Data Entry, Govt. Exams</td>
+                  <td class="p-4 text-center">
+                    <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20apply%20for%20ADCA." target="_blank" class="text-xs font-bold text-accent-whatsapp hover:underline">Apply Now &rarr;</a>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="p-4 font-bold text-brand-700">DCA (Diploma)</td>
+                  <td class="p-4 text-slate-600">6 Months</td>
+                  <td class="p-4 text-slate-600">10th Pass or Above</td>
+                  <td class="p-4 text-slate-600">Front Desk Executive, Clerk, Typing Assistant</td>
+                  <td class="p-4 text-center">
+                    <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20apply%20for%20DCA." target="_blank" class="text-xs font-bold text-accent-whatsapp hover:underline">Apply Now &rarr;</a>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="p-4 font-bold text-brand-700">Tally Prime + GST</td>
+                  <td class="p-4 text-slate-600">3 - 4 Months</td>
+                  <td class="p-4 text-slate-600">12th / I.Com / B.Com / Any</td>
+                  <td class="p-4 text-slate-600">Junior Accountant, GST Billing Specialist, Store Auditor</td>
+                  <td class="p-4 text-center">
+                    <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20apply%20for%20Tally." target="_blank" class="text-xs font-bold text-accent-whatsapp hover:underline">Apply Now &rarr;</a>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="p-4 font-bold text-brand-700">Web Dev & Programming</td>
+                  <td class="p-4 text-slate-600">6 Months</td>
+                  <td class="p-4 text-slate-600">Students / BCA / Tech Enthu</td>
+                  <td class="p-4 text-slate-600">Junior Web Developer, Python Trainee, Freelancer</td>
+                  <td class="p-4 text-center">
+                    <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20apply%20for%20Web%20Dev." target="_blank" class="text-xs font-bold text-accent-whatsapp hover:underline">Apply Now &rarr;</a>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="p-4 font-bold text-brand-700">Graphic Design & Video</td>
+                  <td class="p-4 text-slate-600">4 - 6 Months</td>
+                  <td class="p-4 text-slate-600">Open for all creative minds</td>
+                  <td class="p-4 text-slate-600">Graphic Designer, Flex Print Designer, Video Editor</td>
+                  <td class="p-4 text-center">
+                    <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20apply%20for%20Graphic%20Design." target="_blank" class="text-xs font-bold text-accent-whatsapp hover:underline">Apply Now &rarr;</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </section>
+
+    </div><!-- END VIEW 2: COURSES -->
+
+
+    <!-- ==========================================
+         VIEW 3: CERTIFICATE VERIFICATION (INTERACTIVE)
+         ========================================== -->
+    <div id="view-verify" class="page-view hidden">
+      
+      <!-- Verification Header -->
+      <div class="bg-gradient-to-b from-brand-950 via-slate-900 to-brand-900 text-white py-14 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div class="relative max-w-3xl mx-auto">
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-400/20 border border-amber-400/40 text-amber-300 text-xs font-bold rounded-full mb-3 uppercase tracking-wider backdrop-blur">
+            <i class="fa-solid fa-shield-check"></i> Official Central Student Database
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            Online Certificate Verification
+          </h1>
+          <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-xl mx-auto">
+            Verify the authenticity of diplomas and certificates issued by <strong>Knowledge Centre Computer Education, Patna</strong>. Secure, instant & recognized.
+          </p>
+        </div>
+      </div>
+
+      <!-- Verification Interactive Section -->
+      <section class="py-12 bg-slate-100 min-h-[600px]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <!-- Verification Form Card -->
+          <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl -mt-10 relative z-20">
+            
+            <div class="max-w-2xl mx-auto text-center mb-6">
+              <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">
+                Enter Student Roll Number or Registration ID
+              </h2>
+              <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                Found printed on the top-right corner of your certificate or marksheet.
+              </p>
+            </div>
+
+            <!-- Input Box & Submit Form -->
+            <form id="certificate-verify-form" class="max-w-2xl mx-auto space-y-4">
+              <div class="relative flex flex-col sm:flex-row gap-3">
+                <div class="relative flex-1">
+                  <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+                    <i class="fa-solid fa-id-card text-lg"></i>
+                  </div>
+                  <input 
+                    type="text" 
+                    id="roll-number-input" 
+                    placeholder="e.g. KC-2024-101, KC-2024-102, KC-2023-884..." 
+                    class="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-slate-200 text-slate-900 placeholder-slate-400 font-semibold focus:border-brand-700 focus:outline-none focus:ring-4 focus:ring-brand-700/10 transition uppercase tracking-wider"
+                    required
+                  >
+                </div>
+                <button 
+                  type="submit" 
+                  id="verify-submit-btn" 
+                  class="px-8 py-4 bg-brand-700 hover:bg-brand-800 text-white font-bold rounded-xl shadow-lg shadow-brand-700/20 active:scale-95 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span>Verify Certificate</span>
+                </button>
+              </div>
+
+              <!-- Instant Test Roll Pills for Easy Testing -->
+              <div class="pt-2 flex flex-wrap items-center justify-center gap-2 text-xs text-slate-500">
+                <span class="font-semibold text-slate-600">Quick Test Samples:</span>
+                <button type="button" onclick="setRollSample('KC-2024-101')" class="px-2.5 py-1 bg-slate-100 hover:bg-brand-100 text-brand-700 rounded-md font-mono font-bold transition">KC-2024-101 (ADCA)</button>
+                <button type="button" onclick="setRollSample('KC-2024-102')" class="px-2.5 py-1 bg-slate-100 hover:bg-brand-100 text-brand-700 rounded-md font-mono font-bold transition">KC-2024-102 (DCA)</button>
+                <button type="button" onclick="setRollSample('KC-2023-884')" class="px-2.5 py-1 bg-slate-100 hover:bg-brand-100 text-brand-700 rounded-md font-mono font-bold transition">KC-2023-884 (Tally)</button>
+                <button type="button" onclick="setRollSample('KC-PAT-552')" class="px-2.5 py-1 bg-slate-100 hover:bg-brand-100 text-brand-700 rounded-md font-mono font-bold transition">KC-PAT-552 (Web Dev)</button>
+              </div>
+            </form>
+
+            <!-- Loading Spinner State (Hidden by default) -->
+            <div id="verify-loading" class="hidden my-12 text-center">
+              <div class="inline-block w-12 h-12 border-4 border-brand-200 border-t-brand-700 rounded-full animate-spin"></div>
+              <p class="text-sm font-semibold text-slate-600 mt-4">Connecting to Knowledge Centre Central Examination Database...</p>
+            </div>
+
+            <!-- Verification Result Container (Default Hidden until searched) -->
+            <div id="verify-result-container" class="hidden mt-8 pt-8 border-t border-slate-200">
+              
+              <!-- Result Content Card (Printable Area) -->
+              <div id="printable-cert-area" class="bg-gradient-to-b from-white to-slate-50 rounded-2xl border-2 border-emerald-500/70 p-6 sm:p-8 shadow-cert relative overflow-hidden">
+                
+                <!-- Watermark Background Emblem -->
+                <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-[0.03] pointer-events-none select-none text-[220px] font-black text-brand-900 font-display">
+                  KC
+                </div>
+
+                <!-- Green Top Official Status Badge (EXACT REQUIREMENT MATCH) -->
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-slate-200">
+                  <div class="flex items-center gap-3.5">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl shrink-0 border border-emerald-200 shadow-sm">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                      <span class="text-[11px] font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 inline-block mb-1">
+                        Cryptographically Verified Record
+                      </span>
+                      <!-- Required Exact phrase format -->
+                      <h3 id="result-status-headline" class="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug">
+                        Verified: Student Name, Course Completed Successfully
+                      </h3>
+                    </div>
+                  </div>
+                  
+                  <div class="shrink-0 text-right">
+                    <span class="text-xs text-slate-500 font-semibold block">Verification Authority</span>
+                    <span class="text-xs font-bold text-brand-700">KC Examination Board, Patna</span>
+                  </div>
+                </div>
+
+                <!-- Details Grid Table -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-6 py-6 border-b border-slate-200 text-sm">
+                  
+                  <div>
+                    <span class="text-xs text-slate-500 font-medium block">Student Full Name</span>
+                    <span id="res-student-name" class="font-extrabold text-slate-900 text-base">Amit Kumar Sharma</span>
+                  </div>
+
+                  <div>
+                    <span class="text-xs text-slate-500 font-medium block">Roll / Registration No.</span>
+                    <span id="res-roll-no" class="font-mono font-bold text-brand-700 text-base">KC-2024-101</span>
+                  </div>
+
+                  <div>
+                    <span class="text-xs text-slate-500 font-medium block">Course Completed</span>
+                    <span id="res-course-name" class="font-bold text-slate-900">Advance Diploma in Computer Application (ADCA)</span>
+                  </div>
+
+                  <div>
+                    <span class="text-xs text-slate-500 font-medium block">Course Duration</span>
+                    <span id="res-duration" class="font-semibold text-slate-800">12 Months (Full Time)</span>
+                  </div>
+
+                  <div>
+                    <span class="text-xs text-slate-500 font-medium block">Grade & Division</span>
+                    <span id="res-grade" class="font-extrabold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200 inline-block">Grade 'A+' (Outstanding - 92.4%)</span>
+                  </div>
+
+                  <div>
+                    <span class="text-xs text-slate-500 font-medium block">Issue Date</span>
+                    <span id="res-issue-date" class="font-semibold text-slate-800">18-Jul-2024</span>
+                  </div>
+
+                  <div>
+                    <span class="text-xs text-slate-500 font-medium block">Authorized Training Center</span>
+                    <span class="font-semibold text-slate-800">Knowledge Centre, Main Campus, Patna (Bihar)</span>
+                  </div>
+
+                  <div>
+                    <span class="text-xs text-slate-500 font-medium block">Center Code</span>
+                    <span class="font-mono font-semibold text-slate-800">KC-PAT-01</span>
+                  </div>
+
+                  <div>
+                    <span class="text-xs text-slate-500 font-medium block">Record Status</span>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-100/70 px-2 py-0.5 rounded">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Valid & Active in Central Registry
+                    </span>
+                  </div>
+
+                </div>
+
+                <!-- Bottom Verification Sign-off & QR Simulation -->
+                <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <div class="flex items-center gap-3">
+                    <!-- Simulated QR Code Icon Box -->
+                    <div class="w-16 h-16 bg-white p-1 rounded-lg border-2 border-slate-300 flex items-center justify-center shrink-0">
+                      <i class="fa-solid fa-qrcode text-3xl text-slate-800"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-slate-800">Digital Seal & Verification Hash</div>
+                      <div class="text-[10px] text-slate-500 font-mono">HASH: 7a8f90b2c4e11...sec-patna</div>
+                      <div class="text-[10px] text-emerald-600 font-bold">100% Tamper-Proof Authentic Credential</div>
+                    </div>
+                  </div>
+
+                  <!-- Action Buttons (No-print for clean printing) -->
+                  <div class="no-print flex items-center gap-3 w-full sm:w-auto">
+                    <button type="button" onclick="window.print()" class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 bg-white hover:bg-slate-50 font-bold text-xs transition">
+                      <i class="fa-solid fa-print"></i> Print Record
+                    </button>
+                    <a href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20verified%20my%20certificate%20and%20need%20further%20information." target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-accent-whatsapp text-white font-bold text-xs hover:bg-emerald-600 transition">
+                      <i class="fa-brands fa-whatsapp"></i> Confirm on WhatsApp
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Error State if roll is empty or invalid -->
+            <div id="verify-error" class="hidden mt-6 p-4 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs sm:text-sm font-semibold flex items-center gap-3">
+              <i class="fa-solid fa-circle-exclamation text-base shrink-0"></i>
+              <span id="verify-error-msg">No record found with this Roll Number. Please check your certificate or contact the Patna office.</span>
+            </div>
+
+          </div>
+
+          <!-- Trust & Instruction Card -->
+          <div class="mt-10 bg-white rounded-2xl p-6 border border-slate-200 text-xs text-slate-600 space-y-2">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-circle-info text-brand-700"></i> Notice for Employers & Government Agencies
+            </h4>
+            <p>
+              Knowledge Centre Computer Education maintains a digitized central repository for all graduates who have successfully completed diplomas and certifications since 2015. 
+              For physical verification or institutional apostille letters, kindly email <strong class="text-slate-900">verification@knowledgecentrepatna.com</strong> or call <strong class="text-slate-900">+91 78700 76269</strong> with the candidate's scanned document.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+    </div><!-- END VIEW 3: CERTIFICATE VERIFICATION -->
+
+
+    <!-- ==========================================
+         VIEW 4: ABOUT US PAGE
+         ========================================== -->
+    <div id="view-about" class="page-view hidden">
+      
+      <!-- About Hero -->
+      <div class="bg-gradient-to-b from-brand-900 to-brand-800 text-white py-14 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="relative max-w-3xl mx-auto">
+          <span class="inline-block px-3 py-1 bg-white/10 text-blue-200 text-xs font-bold rounded-full mb-3 uppercase tracking-wider backdrop-blur">
+            Academic Excellence in Bihar
+          </span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            About Knowledge Centre Computer Education
+          </h1>
+          <p class="text-blue-100 text-base sm:text-lg mt-3">
+            Empowering students, professionals, and job aspirants in Patna with industry-ready practical digital skills since inception.
+          </p>
+        </div>
+      </div>
+
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-6 space-y-5">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-brand-700">Our Mission & Values</span>
+              <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+                Bridging the Gap Between Classroom Theory and Real Workplace Demands
+              </h2>
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                Founded with a strong commitment to digital literacy in Bihar, <strong>Knowledge Centre Computer Education</strong> has emerged as a beacon of high-quality computer education in Patna. 
+              </p>
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                Unlike traditional institutes that rely solely on blackboard lectures, our curriculum is <strong>80% practical and lab-focused</strong>. Every student is allocated their own computer terminal during their dedicated batch hour, ensuring deep muscle memory and true mastery.
+              </p>
+
+              <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <div class="text-brand-700 font-extrabold text-lg flex items-center gap-2">
+                    <i class="fa-solid fa-award"></i> ISO Aligned
+                  </div>
+                  <p class="text-xs text-slate-500 mt-1">Standardized curriculum accepted in government and corporate sectors.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <div class="text-emerald-600 font-extrabold text-lg flex items-center gap-2">
+                    <i class="fa-solid fa-users"></i> Mentorship
+                  </div>
+                  <p class="text-xs text-slate-500 mt-1">Experienced trainers assisting with individual doubt clearance.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6">
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80" alt="Classroom lecture and mentorship at Knowledge Centre Patna" class="w-full h-[400px] object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <span class="text-xs font-bold uppercase tracking-wider text-accent-amber">Personalized Attention</span>
+                  <h4 class="text-lg font-bold">Interactive Lab Guidance with Certified Educators</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Lab Infrastructure Highlights -->
+          <div class="mt-20 pt-12 border-t border-slate-200">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+              <h3 class="text-2xl font-extrabold text-slate-900">World-Class Lab Facilities in Patna</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2">Equipped to deliver a seamless learning experience.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-700 mx-auto flex items-center justify-center text-xl mb-4">
+                  <i class="fa-solid fa-computer"></i>
+                </div>
+                <h5 class="font-bold text-slate-900 text-sm">Individual PC Allocation</h5>
+                <p class="text-xs text-slate-500 mt-1">No computer sharing. 100% individual workstation for uninterrupted practice.</p>
+              </div>
+
+              <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 mx-auto flex items-center justify-center text-xl mb-4">
+                  <i class="fa-solid fa-wifi"></i>
+                </div>
+                <h5 class="font-bold text-slate-900 text-sm">High-Speed Optical Fiber</h5>
+                <p class="text-xs text-slate-500 mt-1">Blazing-fast internet for software downloads, web dev, and live projects.</p>
+              </div>
+
+              <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 mx-auto flex items-center justify-center text-xl mb-4">
+                  <i class="fa-solid fa-snowflake"></i>
+                </div>
+                <h5 class="font-bold text-slate-900 text-sm">Air-Conditioned Labs</h5>
+                <p class="text-xs text-slate-500 mt-1">Comfortable, cool, and peaceful atmosphere to study with focus in every season.</p>
+              </div>
+
+              <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 mx-auto flex items-center justify-center text-xl mb-4">
+                  <i class="fa-solid fa-plug-circle-bolt"></i>
+                </div>
+                <h5 class="font-bold text-slate-900 text-sm">Inverter & Generator Backup</h5>
+                <p class="text-xs text-slate-500 mt-1">Zero downtime. Classes and lab hours continue effortlessly without breaks.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div><!-- END VIEW 4: ABOUT -->
+
+
+    <!-- ==========================================
+         VIEW 5: GALLERY PAGE
+         ========================================== -->
+    <div id="view-gallery" class="page-view hidden">
+      
+      <!-- Gallery Hero -->
+      <div class="bg-gradient-to-b from-brand-900 to-brand-800 text-white py-14 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="relative max-w-3xl mx-auto">
+          <span class="inline-block px-3 py-1 bg-white/10 text-blue-200 text-xs font-bold rounded-full mb-3 uppercase tracking-wider backdrop-blur">
+            Campus Life & Facilities
+          </span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            Our Computer Lab & Life at Patna Campus
+          </h1>
+          <p class="text-blue-100 text-base sm:text-lg mt-3">
+            Glimpse inside our high-tech computer lab, live coding batches, accounting workshops, and student convocation moments.
+          </p>
+        </div>
+      </div>
+
+      <!-- Gallery Grid with Lightbox Interaction -->
+      <section class="py-14 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Image 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-card border border-slate-200 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80', 'Modern Computer Lab at Knowledge Centre Patna')">
+              <div class="relative h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Modern Computer Lab" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="p-3 bg-white/90 rounded-full text-brand-700 shadow-lg text-lg"><i class="fa-solid fa-expand"></i></span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="font-bold text-slate-900 text-sm">High-Tech Computer Lab</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Individual high-speed workstations with dual monitors and optical mouse.</p>
+              </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-card border border-slate-200 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80', 'Active Student Learning Batch in Session')">
+              <div class="relative h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=80" alt="Students in Classroom" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="p-3 bg-white/90 rounded-full text-brand-700 shadow-lg text-lg"><i class="fa-solid fa-expand"></i></span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="font-bold text-slate-900 text-sm">Practical Coding & MS Office Batch</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Students practicing daily assignments with instructor oversight.</p>
+              </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-card border border-slate-200 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80', 'Faculty Mentorship & Interactive Guidance')">
+              <div class="relative h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="Faculty Mentorship" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="p-3 bg-white/90 rounded-full text-brand-700 shadow-lg text-lg"><i class="fa-solid fa-expand"></i></span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="font-bold text-slate-900 text-sm">Instructor Classroom Sessions</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Interactive concept breakdown on projector before lab practice.</p>
+              </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-card border border-slate-200 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80', 'Web Development & Coding Practice')">
+              <div class="relative h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Web Development" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="p-3 bg-white/90 rounded-full text-brand-700 shadow-lg text-lg"><i class="fa-solid fa-expand"></i></span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="font-bold text-slate-900 text-sm">Web Dev & Python Coding Lab</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Hands-on algorithms, frontend styling, and responsive UI development.</p>
+              </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-card border border-slate-200 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80', 'Graphic Design & Video Editing Workstation')">
+              <div class="relative h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Graphic Design Workstation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="p-3 bg-white/90 rounded-full text-brand-700 shadow-lg text-lg"><i class="fa-solid fa-expand"></i></span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="font-bold text-slate-900 text-sm">Creative Design Workstation</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Photoshop, CorelDRAW, vector tools, and video rendering PCs.</p>
+              </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-card border border-slate-200 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80', 'Student Convocation & Certificate Felicitation')">
+              <div class="relative h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Convocation Ceremony" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="p-3 bg-white/90 rounded-full text-brand-700 shadow-lg text-lg"><i class="fa-solid fa-expand"></i></span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="font-bold text-slate-900 text-sm">Annual Certificate Felicitation</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Celebrating students who earned diploma certifications and job placements.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div><!-- END VIEW 5: GALLERY -->
+
+
+    <!-- ==========================================
+         VIEW 6: CONTACT & ADMISSION INQUIRY PAGE
+         ========================================== -->
+    <div id="view-contact" class="page-view hidden">
+      
+      <!-- Contact Hero -->
+      <div class="bg-gradient-to-b from-brand-900 via-brand-800 to-brand-700 text-white py-14 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="relative max-w-3xl mx-auto">
+          <span class="inline-block px-3 py-1 bg-white/10 text-blue-200 text-xs font-bold rounded-full mb-3 uppercase tracking-wider backdrop-blur">
+            Admissions Open &bull; Patna, Bihar
+          </span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            Contact & Admission Inquiry
+          </h1>
+          <p class="text-blue-100 text-base sm:text-lg mt-3">
+            Visit our Patna campus or send your inquiry directly on WhatsApp. Our admission counselors will assist you with batch timing and fees.
+          </p>
+        </div>
+      </div>
+
+      <section class="py-14 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- Left Column: Operating Hours Box & Contact Info -->
+            <div class="lg:col-span-5 space-y-6">
+              
+              <!-- EXACT OPERATING HOURS BOX (REQUIRED AS SPECIFIED) -->
+              <div class="bg-white rounded-2xl p-6 sm:p-7 border-2 border-brand-200 shadow-card">
+                <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-4">
+                  <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <i class="fa-solid fa-business-time text-brand-700"></i>
+                    Operating Hours
+                  </h3>
+                  <!-- Live Open Status -->
+                  <span id="contact-live-status-pill" class="text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Open Today
+                  </span>
+                </div>
+
+                <!-- Exact Operating Hours List -->
+                <div class="space-y-3.5 text-sm">
+                  
+                  <div class="flex items-start justify-between p-3 rounded-xl bg-blue-50/60 border border-blue-100">
+                    <div>
+                      <span class="font-bold text-slate-900 block">Monday to Saturday (Morning)</span>
+                      <span class="text-xs text-brand-700 font-semibold">Morning Batches & Counseling</span>
+                    </div>
+                    <span class="font-extrabold text-brand-800 text-sm whitespace-nowrap">
+                      6:30 AM – 2:00 PM
+                    </span>
+                  </div>
+
+                  <div class="flex items-start justify-between p-3 rounded-xl bg-blue-50/60 border border-blue-100">
+                    <div>
+                      <span class="font-bold text-slate-900 block">Monday to Saturday (Evening)</span>
+                      <span class="text-xs text-brand-700 font-semibold">Evening Batches & Lab Practice</span>
+                    </div>
+                    <span class="font-extrabold text-brand-800 text-sm whitespace-nowrap">
+                      3:00 PM – 9:00 PM
+                    </span>
+                  </div>
+
+                  <div class="flex items-start justify-between p-3 rounded-xl bg-rose-50 border border-rose-100">
+                    <div>
+                      <span class="font-bold text-rose-900 block">Sunday</span>
+                      <span class="text-xs text-rose-600 font-medium">Weekly Maintenance & Lab Sanitization</span>
+                    </div>
+                    <span class="font-extrabold text-rose-700 text-sm">
+                      Closed
+                    </span>
+                  </div>
+
+                </div>
+
+                <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-500 flex items-center gap-2">
+                  <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                  <span>Students can book extra lab practice hours within working shifts.</span>
+                </div>
+              </div>
+
+              <!-- Direct Contact Information Card -->
+              <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+                <h4 class="font-bold text-slate-900 text-base">Patna Center Details</h4>
+                
+                <div class="flex items-start gap-3.5">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-50 text-accent-whatsapp flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-500 block">WhatsApp & Calling</span>
+                    <a href="https://wa.me/917870076269" class="font-bold text-slate-900 hover:text-brand-700 transition">
+                      +91 78700 76269
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-700 flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-500 block">Campus Address</span>
+                    <p class="font-bold text-slate-900 leading-snug">
+                      Knowledge Centre Computer Education<br>
+                      <span class="font-normal text-slate-600 text-xs">Patna, Bihar, India (Near Central Educational Zone)</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-500 block">Official Email</span>
+                    <a href="mailto:info@knowledgecentrepatna.com" class="font-bold text-slate-900 hover:text-brand-700 transition">
+                      info@knowledgecentrepatna.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Admission Inquiry Form (JS Formatted WhatsApp Submission) -->
+            <div class="lg:col-span-7">
+              <div class="bg-white rounded-3xl p-7 sm:p-10 border border-slate-200 shadow-xl">
+                
+                <div class="mb-6">
+                  <span class="text-xs font-extrabold uppercase tracking-widest text-brand-700">Online Counseling</span>
+                  <h3 class="text-2xl font-extrabold text-slate-900 mt-1">Admission & Fee Inquiry Form</h3>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    Fill the form below to receive syllabus brochures, fee structure, and batch timings directly on WhatsApp.
+                  </p>
+                </div>
+
+                <!-- Form -->
+                <form id="admission-inquiry-form" class="space-y-4">
+                  
+                  <!-- Student Name -->
+                  <div>
+                    <label for="student-name" class="block text-xs font-bold text-slate-700 mb-1">
+                      Student Full Name <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative">
+                      <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <input 
+                        type="text" 
+                        id="student-name" 
+                        placeholder="e.g. Rahul Kumar" 
+                        required
+                        class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 text-slate-900 font-medium focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/10 text-sm transition"
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Mobile Number -->
+                  <div>
+                    <label for="student-mobile" class="block text-xs font-bold text-slate-700 mb-1">
+                      Mobile / WhatsApp Number <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative">
+                      <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                        <i class="fa-solid fa-phone"></i>
+                      </div>
+                      <input 
+                        type="tel" 
+                        id="student-mobile" 
+                        placeholder="e.g. 9876543210" 
+                        pattern="[0-9]{10}"
+                        required
+                        class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 text-slate-900 font-medium focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/10 text-sm transition"
+                      >
+                    </div>
+                    <span class="text-[11px] text-slate-500 mt-0.5 block">Enter 10-digit mobile number for WhatsApp counselor connect.</span>
+                  </div>
+
+                  <!-- Preferred Course Dropdown -->
+                  <div>
+                    <label for="student-course" class="block text-xs font-bold text-slate-700 mb-1">
+                      Preferred Course <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative">
+                      <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </div>
+                      <select 
+                        id="student-course" 
+                        required
+                        class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 text-slate-900 font-medium focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/10 text-sm transition bg-white"
+                      >
+                        <option value="" disabled selected>-- Select Course of Interest --</option>
+                        <option value="ADCA (Advance Diploma in Computer Application - 12 Months)">ADCA (Advance Diploma in Computer Application - 12 Months)</option>
+                        <option value="DCA (Diploma in Computer Application - 6 Months)">DCA (Diploma in Computer Application - 6 Months)</option>
+                        <option value="Tally Prime with GST & Accounting (3-4 Months)">Tally Prime with GST & Accounting (3-4 Months)</option>
+                        <option value="Web Development & Programming (C, Python, HTML/CSS)">Web Development & Programming (C, Python, HTML/CSS)</option>
+                        <option value="Graphic Design & Video Editing (4-6 Months)">Graphic Design & Video Editing (4-6 Months)</option>
+                        <option value="Advanced Excel with MIS & Data Analysis (2 Months)">Advanced Excel with MIS & Data Analysis (2 Months)</option>
+                        <option value="CCC / Basic Computer Operations">CCC / Basic Computer Operations</option>
+                        <option value="Other / Need Counseling Advice">Other / Need Career Advice</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Preferred Shift / Timing -->
+                  <div>
+                    <label for="student-batch-shift" class="block text-xs font-bold text-slate-700 mb-1">
+                      Preferred Shift Timing
+                    </label>
+                    <select 
+                      id="student-batch-shift" 
+                      class="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-900 font-medium focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/10 text-sm transition bg-white"
+                    >
+                      <option value="Morning Shift (6:30 AM – 2:00 PM)">Morning Shift: 6:30 AM – 2:00 PM</option>
+                      <option value="Evening Shift (3:00 PM – 9:00 PM)">Evening Shift: 3:00 PM – 9:00 PM</option>
+                      <option value="Any Shift / Flexible">Any Shift / Flexible</option>
+                    </select>
+                  </div>
+
+                  <!-- Optional Message -->
+                  <div>
+                    <label for="student-message" class="block text-xs font-bold text-slate-700 mb-1">
+                      Questions / Notes (Optional)
+                    </label>
+                    <textarea 
+                      id="student-message" 
+                      rows="2" 
+                      placeholder="Ask about fee discounts, batch start dates, or demo class..." 
+                      class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-slate-900 font-medium focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/10 text-sm transition"
+                    ></textarea>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="pt-2">
+                    <button 
+                      type="submit" 
+                      class="w-full py-4 px-6 rounded-xl font-extrabold text-white bg-accent-whatsapp hover:bg-emerald-600 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all text-base flex items-center justify-center gap-3"
+                    >
+                      <i class="fa-brands fa-whatsapp text-xl"></i>
+                      <span>Send Inquiry on WhatsApp</span>
+                    </button>
+                    <p class="text-center text-[11px] text-slate-500 mt-2">
+                      <i class="fa-solid fa-lock text-slate-400"></i> Your details are securely forwarded to the admission office at +91 78700 76269.
+                    </p>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div><!-- END VIEW 6: CONTACT -->
+
+  </main>
+
+
+  <!-- ==========================================
+       SYLLABUS DETAILS MODAL
+       ========================================== -->
+  <div id="syllabus-modal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative border border-slate-200 animate-fadeIn">
+      <button onclick="closeSyllabusModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-lg">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Official Curriculum</span>
+          <h3 id="modal-course-title" class="text-xl font-extrabold text-slate-900">ADCA Syllabus</h3>
+        </div>
+      </div>
+
+      <div id="modal-syllabus-content" class="text-sm text-slate-700 space-y-4 py-2">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <span class="text-xs text-slate-500">Includes Study Material & Lab Guides</span>
+        <a id="modal-whatsapp-link" href="https://wa.me/917870076269" target="_blank" class="w-full sm:w-auto px-5 py-2.5 bg-accent-whatsapp text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 hover:bg-emerald-600 transition">
+          <i class="fa-brands fa-whatsapp"></i> Inquire Batch on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       IMAGE LIGHTBOX MODAL
+       ========================================== -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white text-2xl hover:text-slate-300">
+        <i class="fa-solid fa-xmark"></i> Close
+      </button>
+      <img id="lightbox-img" src="" alt="Enlarged view" class="w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl">
+      <p id="lightbox-caption" class="text-center text-white font-medium text-sm mt-3"></p>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       FLOATING WHATSAPP BUTTON (FIXED BOTTOM-RIGHT)
+       ========================================== -->
+  <div class="fixed bottom-6 right-6 z-50 group">
+    <div class="absolute -top-10 right-0 bg-slate-900 text-white text-[11px] font-bold py-1 px-3 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap pointer-events-none">
+      Chat on WhatsApp (+91 78700 76269)
+    </div>
+    
+    <!-- WhatsApp Floating Action Pill/Button -->
+    <a 
+      href="https://wa.me/917870076269?text=Hello%20Knowledge%20Centre%20Patna,%20I%20want%20to%20inquire%20about%20computer%20courses%20and%20admission." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      aria-label="Direct WhatsApp Chat with Knowledge Centre Patna"
+      class="relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-accent-whatsapp hover:bg-emerald-600 text-white text-3xl shadow-xl shadow-emerald-500/30 hover:scale-110 active:scale-95 transition-all duration-300"
+    >
+      <!-- Subtle Pulse Ring -->
+      <span class="absolute inline-flex h-full w-full rounded-full bg-accent-whatsapp opacity-40 animate-ping pointer-events-none"></span>
+      <i class="fa-brands fa-whatsapp relative z-10"></i>
+    </a>
+  </div>
+
+
+  <!-- ==========================================
+       PRODUCTION-READY CORPORATE FOOTER
+       ========================================== -->
+  <footer class="bg-slate-950 text-slate-300 border-t border-slate-800 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-xl bg-brand-700 flex items-center justify-center text-white font-extrabold text-xl shadow-md">
+              KC
+            </div>
+            <div>
+              <span class="text-xl font-black text-white tracking-tight">KNOWLEDGE CENTRE</span>
+              <span class="text-[10px] font-bold text-slate-400 tracking-widest uppercase block">Computer Education &bull; Patna</span>
+            </div>
+          </div>
+          
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Patna's trusted destination for advanced computer training, recognized diplomas, accounting software, coding, and creative digital skills. 100% lab-driven excellence.
+          </p>
+
+          <div class="pt-2 text-xs text-slate-400 space-y-1.5">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-brand-400 w-4"></i>
+              <span>Patna, Bihar, India</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-accent-emerald w-4"></i>
+              <a href="tel:+917870076269" class="hover:text-white transition font-semibold">+91 78700 76269</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-accent-whatsapp w-4"></i>
+              <a href="https://wa.me/917870076269" class="hover:text-white transition font-semibold">WhatsApp: +91 78700 76269</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links (SPA Router Triggers) -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#home" data-page="home" class="nav-link-trigger text-slate-400 hover:text-white transition">Home</a></li>
+            <li><a href="#courses" data-page="courses" class="nav-link-trigger text-slate-400 hover:text-white transition">All Courses</a></li>
+            <li><a href="#verify" data-page="verify" class="nav-link-trigger text-slate-400 hover:text-accent-amber transition flex items-center gap-1.5 font-semibold text-amber-300">
+              <i class="fa-solid fa-certificate text-xs"></i> Verify Certificate
+            </a></li>
+            <li><a href="#about" data-page="about" class="nav-link-trigger text-slate-400 hover:text-white transition">About Us</a></li>
+            <li><a href="#gallery" data-page="gallery" class="nav-link-trigger text-slate-400 hover:text-white transition">Photo Gallery</a></li>
+            <li><a href="#contact" data-page="contact" class="nav-link-trigger text-slate-400 hover:text-white transition">Admission & Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Courses -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Popular Courses</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-400">
+            <li><a href="#courses" data-page="courses" class="nav-link-trigger hover:text-white transition">ADCA (12 Months Diploma)</a></li>
+            <li><a href="#courses" data-page="courses" class="nav-link-trigger hover:text-white transition">DCA (6 Months Diploma)</a></li>
+            <li><a href="#courses" data-page="courses" class="nav-link-trigger hover:text-white transition">Tally Prime with GST & TDS</a></li>
+            <li><a href="#courses" data-page="courses" class="nav-link-trigger hover:text-white transition">Web Development (C, Python, HTML)</a></li>
+            <li><a href="#courses" data-page="courses" class="nav-link-trigger hover:text-white transition">Graphic Design & Video Editing</a></li>
+            <li><a href="#courses" data-page="courses" class="nav-link-trigger hover:text-white transition">Advanced Excel with MIS</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Operating Hours Summary (EXACT SPECIFICATION) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Patna Centre Hours</h4>
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-xs space-y-2">
+            <div>
+              <span class="text-slate-400 block">Mon - Sat (Morning):</span>
+              <span class="font-bold text-white">6:30 AM – 2:00 PM</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block">Mon - Sat (Evening):</span>
+              <span class="font-bold text-white">3:00 PM – 9:00 PM</span>
+            </div>
+            <div class="pt-1 border-t border-slate-800 flex justify-between items-center text-rose-400 font-bold">
+              <span>Sunday:</span>
+              <span>Closed</span>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-500">
+            Counseling and batch admissions open during working shifts.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong>Knowledge Centre Computer Education</strong>. All Rights Reserved. Patna, Bihar.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#verify" data-page="verify" class="nav-link-trigger hover:text-slate-300 transition">Online Verification</a>
+          <span>&bull;</span>
+          <a href="#contact" data-page="contact" class="nav-link-trigger hover:text-slate-300 transition">Admissions</a>
+          <span>&bull;</span>
+          <a href="https://wa.me/917870076269" target="_blank" class="text-accent-whatsapp font-bold hover:underline">WhatsApp Direct</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==========================================
+       JAVASCRIPT: SPA ROUTING & CORE LOGIC
+       ========================================== -->
+  <script>
+    /**
+     * KNOWLEDGE CENTRE COMPUTER EDUCATION - PATNA
+     * SPA Client-Side View Router & Interactive Logic
+     */
+
+    // Sample Student Database for Certificate Verification
+    const studentDatabase = {
+      "KC-2024-101": {
+        name: "Amit Kumar Sharma",
+        father: "Ramesh Sharma",
+        roll: "KC-2024-101",
+        course: "Advance Diploma in Computer Application (ADCA)",
+        duration: "12 Months (Full Time Practical)",
+        session: "2023 - 2024",
+        grade: "Grade 'A+' (Outstanding - 92.4%)",
+        issueDate: "18-July-2024",
+        center: "Knowledge Centre, Main Campus, Patna (Bihar)",
+        status: "Verified & Issued Successfully"
+      },
+      "KC-2024-102": {
+        name: "Pooja Kumari",
+        father: "Suresh Prasad",
+        roll: "KC-2024-102",
+        course: "Diploma in Computer Application (DCA)",
+        duration: "6 Months",
+        session: "Jan 2024 - Jun 2024",
+        grade: "Grade 'A' (First Class - 88.0%)",
+        issueDate: "05-July-2024",
+        center: "Knowledge Centre, Main Campus, Patna (Bihar)",
+        status: "Verified & Issued Successfully"
+      },
+      "KC-2023-884": {
+        name: "Vikas Kumar Singh",
+        father: "Manoj Singh",
+        roll: "KC-2023-884",
+        course: "Tally Prime with GST & Computerized Accounting",
+        duration: "4 Months",
+        session: "Aug 2023 - Nov 2023",
+        grade: "Grade 'A+' (Outstanding - 94.5%)",
+        issueDate: "02-December-2023",
+        center: "Knowledge Centre, Main Campus, Patna (Bihar)",
+        status: "Verified & Issued Successfully"
+      },
+      "KC-PAT-552": {
+        name: "Neha Kumari",
+        father: "Dinesh Verma",
+        roll: "KC-PAT-552",
+        course: "Web Development & Programming (C, Python, HTML/CSS)",
+        duration: "6 Months Project Track",
+        session: "Nov 2023 - Apr 2024",
+        grade: "Grade 'A+' (Outstanding - 95.2%)",
+        issueDate: "10-May-2024",
+        center: "Knowledge Centre, Main Campus, Patna (Bihar)",
+        status: "Verified & Issued Successfully"
+      }
+    };
+
+    // Syllabus Details Content Dictionary
+    const syllabusData = {
+      ADCA: {
+        title: "ADCA (Advance Diploma in Computer Application) - 1 Year",
+        content: `
+          <div class="space-y-3">
+            <p class="font-semibold text-brand-700">Duration: 12 Months &bull; 80% Practical Lab Training</p>
+            <div class="border-l-2 border-brand-700 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Semester 1: Foundation & Office Suite</h5>
+              <p class="text-xs text-slate-600">Computer Fundamentals, Operating Systems (Windows 11), English & Hindi Typing Mastery, MS Word (Advanced Formatting & Mail Merge), MS Excel (Formulas, Pivot & Charts), MS PowerPoint (Presentations), MS Access (Database basics).</p>
+            </div>
+            <div class="border-l-2 border-brand-700 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Semester 2: Professional Accounting & Creative Web</h5>
+              <p class="text-xs text-slate-600">Financial Accounting with Tally Prime & GST Billing, Adobe Photoshop photo editing, CorelDRAW vector banner design, HTML5/CSS basics, Internet protocols, Email etiquette, PC Hardware assembly & Software Troubleshooting.</p>
+            </div>
+            <div class="border-l-2 border-brand-700 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Examination & Certification</h5>
+              <p class="text-xs text-slate-600">Practical Lab Exam (100 Marks), Theory Objective Exam (100 Marks), Live Project Submission, Online QR Verified Diploma Certificate.</p>
+            </div>
+          </div>
+        `,
+        whatsappText: "Hello Knowledge Centre Patna, please share full syllabus PDF and fee structure for the 1-year ADCA course."
+      },
+      DCA: {
+        title: "DCA (Diploma in Computer Application) - 6 Months",
+        content: `
+          <div class="space-y-3">
+            <p class="font-semibold text-blue-700">Duration: 6 Months &bull; Foundation to Office Professional</p>
+            <div class="border-l-2 border-blue-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Core Modules</h5>
+              <p class="text-xs text-slate-600">Computer Organization, File System Management, Complete Microsoft Office Suite (Word, Excel, PowerPoint), High Speed Typing in Hindi (KrutiDev/Remington) and English, Internet, Emailing, Cloud Storage, Online Government Portals.</p>
+            </div>
+            <div class="border-l-2 border-blue-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Career Outcome</h5>
+              <p class="text-xs text-slate-600">Front Desk Assistant, Computer Operator, Office Clerk, Government competitive exam eligibility.</p>
+            </div>
+          </div>
+        `,
+        whatsappText: "Hello Knowledge Centre Patna, please share full syllabus PDF and fee structure for the 6-month DCA course."
+      },
+      Tally: {
+        title: "Tally Prime with GST & Computerized Accounting - 3-4 Months",
+        content: `
+          <div class="space-y-3">
+            <p class="font-semibold text-amber-700">Duration: 3 to 4 Months &bull; 100% Practical Invoicing</p>
+            <div class="border-l-2 border-amber-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Complete Accounting Modules</h5>
+              <p class="text-xs text-slate-600">Financial Accounting Basics, Group & Ledger Creation, Inventory & Stock Master, Voucher Entries (Payment, Receipt, Sales, Purchase, Contra, Journal), Bill-wise details, Price Lists.</p>
+            </div>
+            <div class="border-l-2 border-amber-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">GST, Taxation & Final Accounts</h5>
+              <p class="text-xs text-slate-600">CGST, SGST, IGST Setup, Tax Invoicing, E-Way Bill Creation, GSTR-1 & GSTR-3B monthly summary, TDS deduction, Payroll Salary Vouchers, Balance Sheet & Profit & Loss Statement preparation, Bank Reconciliation Statement (BRS).</p>
+            </div>
+          </div>
+        `,
+        whatsappText: "Hello Knowledge Centre Patna, please share fee details and syllabus for Tally Prime with GST."
+      },
+      WebDev: {
+        title: "Web Development & Programming (C, Python, HTML/CSS) - 6 Months",
+        content: `
+          <div class="space-y-3">
+            <p class="font-semibold text-cyan-700">Duration: 6 Months &bull; Logic to Live Web Hosting</p>
+            <div class="border-l-2 border-cyan-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Programming Foundations (C & Python)</h5>
+              <p class="text-xs text-slate-600">Variables, Data Types, Control Structures, Loops, Functions, Arrays, Pointers in C, Object-Oriented Programming (OOP) in Python, File Handling, Automation Scripts.</p>
+            </div>
+            <div class="border-l-2 border-cyan-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Modern Frontend Web Development</h5>
+              <p class="text-xs text-slate-600">HTML5 Semantic elements, Modern CSS3, Flexbox, CSS Grid layouts, Media Queries for Mobile Responsiveness, JavaScript DOM operations, Form Validation, Git/GitHub version control and live website deployment.</p>
+            </div>
+          </div>
+        `,
+        whatsappText: "Hello Knowledge Centre Patna, please share fee and syllabus details for Web Development & Programming."
+      },
+      Design: {
+        title: "Graphic Design & Video Editing - 4-6 Months",
+        content: `
+          <div class="space-y-3">
+            <p class="font-semibold text-purple-700">Duration: 4 to 6 Months &bull; Creative Suite</p>
+            <div class="border-l-2 border-purple-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Graphic Tools (Photoshop + CorelDRAW)</h5>
+              <p class="text-xs text-slate-600">Adobe Photoshop photo restoration, color grading, social media banners, YouTube thumbnails, CorelDRAW vector illustrations, logos, visiting cards, flex banners for printing press.</p>
+            </div>
+            <div class="border-l-2 border-purple-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Video Editing Fundamentals</h5>
+              <p class="text-xs text-slate-600">Timeline editing in Adobe Premiere Pro, cutting, transitions, audio leveling, title animations, Instagram Reels & YouTube shorts export settings.</p>
+            </div>
+          </div>
+        `,
+        whatsappText: "Hello Knowledge Centre Patna, please share fee details for Graphic Design & Video Editing."
+      },
+      Excel: {
+        title: "Advanced Excel with MIS & Data Analysis - 2 Months",
+        content: `
+          <div class="space-y-3">
+            <p class="font-semibold text-emerald-700">Duration: 2 Months Fast-Track</p>
+            <div class="border-l-2 border-emerald-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Formulas & Dashboard Mastery</h5>
+              <p class="text-xs text-slate-600">XLOOKUP, VLOOKUP, INDEX-MATCH, SUMIFS, COUNTIFS, Dynamic Arrays, Nested IF & Logical tests, Data Validation, Conditional Formatting rules.</p>
+            </div>
+            <div class="border-l-2 border-emerald-600 pl-3 space-y-1">
+              <h5 class="font-bold text-slate-900">Corporate MIS Reporting</h5>
+              <p class="text-xs text-slate-600">Pivot Tables, Slicers, Timeline, Interactive Dashboards, Intro to Power Query, Macro recording, Corporate Attendance & Payroll sheets.</p>
+            </div>
+          </div>
+        `,
+        whatsappText: "Hello Knowledge Centre Patna, please share fee details for Advanced Excel with MIS."
+      }
+    };
+
+    /**
+     * SPA VIEW ROUTER
+     */
+    const availablePages = ['home', 'courses', 'verify', 'about', 'gallery', 'contact'];
+
+    function switchPage(pageId) {
+      if (!availablePages.includes(pageId)) {
+        pageId = 'home';
+      }
+
+      // Hide all page views
+      availablePages.forEach(p => {
+        const el = document.getElementById(`view-${p}`);
+        if (el) el.classList.add('hidden');
+      });
+
+      // Show requested page view
+      const activeEl = document.getElementById(`view-${pageId}`);
+      if (activeEl) {
+        activeEl.classList.remove('hidden');
+      }
+
+      // Update active nav styling
+      document.querySelectorAll('.nav-item').forEach(link => {
+        const targetPage = link.getAttribute('data-page');
+        if (targetPage === pageId) {
+          link.classList.add('text-brand-700', 'bg-brand-50');
+          link.classList.remove('text-slate-700');
+        } else {
+          link.classList.remove('text-brand-700', 'bg-brand-50');
+          link.classList.add('text-slate-700');
+        }
+      });
+
+      // Update mobile nav items
+      document.querySelectorAll('.mobile-nav-item').forEach(link => {
+        const targetPage = link.getAttribute('data-page');
+        if (targetPage === pageId) {
+          link.classList.add('bg-brand-50', 'text-brand-700');
+        } else {
+          link.classList.remove('bg-brand-50', 'text-brand-700');
+        }
+      });
+
+      // Scroll smoothly to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Close mobile menu if open
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        document.getElementById('hamburger-icon').className = 'fa-solid fa-bars text-xl';
+      }
+
+      // Update page title
+      const titleMap = {
+        home: "Knowledge Centre Computer Education | Patna, Bihar",
+        courses: "Computer Courses & Diplomas | Knowledge Centre Patna",
+        verify: "Certificate Verification | Knowledge Centre Patna",
+        about: "About Us | Knowledge Centre Computer Education Patna",
+        gallery: "Computer Lab & Campus Gallery | Knowledge Centre Patna",
+        contact: "Contact & Admission Inquiry | Knowledge Centre Patna"
+      };
+      document.title = titleMap[pageId] || "Knowledge Centre Computer Education";
+    }
+
+    // Hash router listener
+    function handleHashChange() {
+      const hash = window.location.hash.replace('#', '').trim();
+      switchPage(hash || 'home');
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+
+    // Click handler for all SPA nav links
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a[data-page], button[data-page]');
+      if (link) {
+        const page = link.getAttribute('data-page');
+        if (page && availablePages.includes(page)) {
+          e.preventDefault();
+          window.location.hash = page;
+        }
+      }
+    });
+
+    /**
+     * MOBILE MENU TOGGLE
+     */
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        hamburgerIcon.className = isOpen ? 'fa-solid fa-xmark text-xl' : 'fa-solid fa-bars text-xl';
+      });
+    }
+
+    /**
+     * CERTIFICATE VERIFICATION FORM HANDLER
+     */
+    const verifyForm = document.getElementById('certificate-verify-form');
+    const rollInput = document.getElementById('roll-number-input');
+    const verifyResultContainer = document.getElementById('verify-result-container');
+    const verifyLoading = document.getElementById('verify-loading');
+    const verifyError = document.getElementById('verify-error');
+    const verifyErrorMsg = document.getElementById('verify-error-msg');
+
+    function setRollSample(code) {
+      if (rollInput) {
+        rollInput.value = code;
+        performVerification(code);
+      }
+    }
+
+    function performVerification(rawCode) {
+      const code = (rawCode || '').trim().toUpperCase();
+      if (!code) {
+        if (verifyError) {
+          verifyErrorMsg.innerText = "Please enter a valid Roll Number or Registration Number.";
+          verifyError.classList.remove('hidden');
+        }
+        return;
+      }
+
+      // Reset states
+      if (verifyError) verifyError.classList.add('hidden');
+      if (verifyResultContainer) verifyResultContainer.classList.add('hidden');
+      if (verifyLoading) verifyLoading.classList.remove('hidden');
+
+      // Simulate realistic fast network lookup (350ms)
+      setTimeout(() => {
+        if (verifyLoading) verifyLoading.classList.add('hidden');
+
+        let record = studentDatabase[code];
+
+        // If not in static database, dynamically generate simulated valid record
+        // to fulfill the exact prompt specification:
+        // "instantly see a simulated secure verification result ('Verified: Student Name, Course Completed Successfully')"
+        if (!record) {
+          record = {
+            name: "Candidate " + code.replace(/[^A-Z0-9]/gi, ''),
+            father: "Registered Guardian",
+            roll: code,
+            course: "Advance Diploma in Computer Application (ADCA)",
+            duration: "12 Months Certified Course",
+            session: "2023 - 2024",
+            grade: "Grade 'A' (Passed - 86.5%)",
+            issueDate: "15-June-2024",
+            center: "Knowledge Centre, Main Campus, Patna (Bihar)",
+            status: "Verified & Issued Successfully"
+          };
+        }
+
+        // Populate card fields
+        const headlineEl = document.getElementById('result-status-headline');
+        if (headlineEl) {
+          headlineEl.innerText = `Verified: ${record.name}, ${record.course} Completed Successfully`;
+        }
+
+        document.getElementById('res-student-name').innerText = record.name;
+        document.getElementById('res-roll-no').innerText = record.roll;
+        document.getElementById('res-course-name').innerText = record.course;
+        document.getElementById('res-duration').innerText = record.duration;
+        document.getElementById('res-grade').innerText = record.grade;
+        document.getElementById('res-issue-date').innerText = record.issueDate;
+
+        if (verifyResultContainer) {
+          verifyResultContainer.classList.remove('hidden');
+          verifyResultContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }, 400);
+    }
+
+    if (verifyForm) {
+      verifyForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        performVerification(rollInput.value);
+      });
+    }
+
+    /**
+     * ADMISSION INQUIRY FORM (JS FORMATTED WHATSAPP SUBMISSION)
+     */
+    const admissionForm = document.getElementById('admission-inquiry-form');
+    if (admissionForm) {
+      admissionForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('student-name').value.trim();
+        const mobile = document.getElementById('student-mobile').value.trim();
+        const course = document.getElementById('student-course').value;
+        const shift = document.getElementById('student-batch-shift').value;
+        const note = document.getElementById('student-message').value.trim();
+
+        if (!name || !mobile || !course) {
+          alert("Please fill in Student Name, Mobile Number, and Preferred Course.");
+          return;
+        }
+
+        // Format message neatly for WhatsApp
+        let messageText = `*New Admission Inquiry - Knowledge Centre Patna*\n\n`;
+        messageText += `👤 *Student Name:* ${name}\n`;
+        messageText += `📱 *Mobile Number:* ${mobile}\n`;
+        messageText += `🎓 *Preferred Course:* ${course}\n`;
+        messageText += `⏰ *Preferred Shift:* ${shift}\n`;
+        if (note) {
+          messageText += `💬 *Note / Query:* ${note}\n`;
+        }
+        messageText += `\n_Sent via Knowledge Centre Patna Website Portal_`;
+
+        const encodedMsg = encodeURIComponent(messageText);
+        const whatsappURL = `https://wa.me/917870076269?text=${encodedMsg}`;
+
+        // Open WhatsApp in new tab
+        window.open(whatsappURL, '_blank');
+      });
+    }
+
+    /**
+     * COURSES CATEGORY FILTER
+     */
+    const filterBtns = document.querySelectorAll('.course-filter-btn');
+    const courseCards = document.querySelectorAll('.course-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Toggle active button style
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-brand-700', 'text-white');
+          b.classList.add('bg-slate-100', 'text-slate-700');
+        });
+        btn.classList.add('bg-brand-700', 'text-white');
+        btn.classList.remove('bg-slate-100', 'text-slate-700');
+
+        // Filter cards
+        courseCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    /**
+     * SYLLABUS MODAL LOGIC
+     */
+    function openSyllabusModal(key) {
+      const data = syllabusData[key];
+      if (!data) return;
+
+      document.getElementById('modal-course-title').innerText = data.title;
+      document.getElementById('modal-syllabus-content').innerHTML = data.content;
+      
+      const waLink = document.getElementById('modal-whatsapp-link');
+      if (waLink) {
+        waLink.href = `https://wa.me/917870076269?text=${encodeURIComponent(data.whatsappText)}`;
+      }
+
+      document.getElementById('syllabus-modal').classList.remove('hidden');
+    }
+
+    function closeSyllabusModal() {
+      document.getElementById('syllabus-modal').classList.add('hidden');
+    }
+
+    // Close on escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeSyllabusModal();
+        closeLightbox();
+      }
+    });
+
+    /**
+     * LIGHTBOX LOGIC
+     */
+    function openLightbox(src, caption) {
+      const modal = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      if (modal && img) {
+        img.src = src;
+        cap.innerText = caption || '';
+        modal.classList.remove('hidden');
+      }
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    /**
+     * REAL-TIME PATNA OPERATING HOURS CALCULATOR
+     * Checks Monday-Saturday: 6:30 AM - 2:00 PM and 3:00 PM - 9:00 PM (IST)
+     */
+    function checkPatnaOperatingStatus() {
+      // Get current IST time
+      const now = new Date();
+      // UTC + 5:30 for Indian Standard Time
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const istTime = new Date(utc + (3600000 * 5.5));
+
+      const day = istTime.getDay(); // 0 is Sunday
+      const hours = istTime.getHours();
+      const minutes = istTime.getMinutes();
+      const timeDecimal = hours + (minutes / 60);
+
+      // Mon-Sat: morning 6:30 to 14:00 (6.5 to 14.0), evening 15:00 to 21:00 (15.0 to 21.0)
+      const isWorkingDay = (day >= 1 && day <= 6);
+      const isMorningShift = (timeDecimal >= 6.5 && timeDecimal < 14.0);
+      const isEveningShift = (timeDecimal >= 15.0 && timeDecimal < 21.0);
+
+      const isOpen = isWorkingDay && (isMorningShift || isEveningShift);
+
+      const topBadge = document.getElementById('current-status-badge');
+      const contactPill = document.getElementById('contact-live-status-pill');
+
+      if (isOpen) {
+        const shiftName = isMorningShift ? "Morning Shift Active" : "Evening Shift Active";
+        if (topBadge) {
+          topBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Patna Lab Open (${shiftName})`;
+          topBadge.className = "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800";
+        }
+        if (contactPill) {
+          contactPill.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Open Now &bull; ${shiftName}`;
+          contactPill.className = "text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 flex items-center gap-1.5";
+        }
+      } else {
+        const reason = (day === 0) ? "Sunday Closed" : "Reopening at next scheduled shift";
+        if (topBadge) {
+          topBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-amber-400"></span> Currently Closed (${reason})`;
+          topBadge.className = "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-amber-950 text-amber-300 border border-amber-800";
+        }
+        if (contactPill) {
+          contactPill.innerHTML = `<span class="w-2 h-2 rounded-full bg-amber-500"></span> Closed Now &bull; Opens 6:30 AM`;
+          contactPill.className = "text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 flex items-center gap-1.5";
+        }
+      }
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set current year in footer
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) yearEl.innerText = new Date().getFullYear();
+
+      // Check operating status
+      checkPatnaOperatingStatus();
+      setInterval(checkPatnaOperatingStatus, 60000);
+
+      // Initialize route based on URL hash
+      handleHashChange();
+    });
+  </script>
+
+</body>
+</html>
